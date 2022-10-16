@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, purple,rgb(77, 16, 134) );
+    box-shadow: 6px 4px 5px rgb(226, 219, 154) inset;
+    font-family: Comic Sans MS;
+}
+
+header{
+    background-image: linear-gradient(to right, purple,rgb(77, 16, 134));
+    box-shadow: 6px 4px 5px rgb(226, 219, 154) inset;
+    border-radius: 5%;
+    width: 100%;
+}
+h1{
+	font-size:40px;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow:5px 2px 1px pink;
+	text-align:center;
+	color:#cdf033;
+    font-family: Comic Sans MS;
+}
+
+h3{
+	font-size:25px;
+	text-decoration:none;
+	font-weight:bold;
+	text-align:center;
+	color:#cdf033;
+    font-family: Comic Sans MS;
+}
+
+.castle__logo{
+	width:80px;
+}
+.container__logo{
+	display:flex;
+	justify-content:space-between;
+}
+a{
+    color: #cdf033;
+}
+.container__menu{
+	display:flex;
+	flex-direction:center;
+	justify-content:space-evenly;
+	background-color:rgba(213, 192, 224, 0.1);
+	box-shadow:2px 1px 1.5px #C27DE9;
+	border-radius:4%;
+    font-family: Comic Sans MS;
+    
+	
+}
+
+.container__menu--icon{
+	background-color:rgba(160,13);
+	box-shadow:2px 2px 1.5px #A00DF5;
+	border-radius:5px;
+	text-decoration:none;
+	font-family:monospace,sans-seriff;
+	font-weight:bold;
+	margin-bottom:2px;
+}
+
+.container__classes,img{
+	width:120px;
+}
+
+.container__classes--figure{
+	display:grid;
+	grid-template-columns:repeat(4, 120px);
+	grid-template-areas:repeat(4,120px);
+	justify-content:space-around;
+	margin-top:3px;
+}
+
+.container__footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100px;
+	background-color:#4601FC;
+	box-shadow:5px 5px 3px #5315DA inset;
+}
+
+#contact{
+	text-align:left;
+	color:#8838E8;
+}
+#about{
+	text-align:left;
+	font-size:25px;
+	text-decoration:none;
+	text-shadow:none;
+	font-weight:bold;
+	color:#8838E8;
+}
+.form__container{
+	display:flex;
+	flex-wrap:nowrap;
+	align-content:flex-start;
+	flex-direction:column;
+}
+
+p{
+	color:#EB11F9;
+	font-size:15px;
+	font-weight:bold;
+	font-family:monospace,sans-seriff;
+	
+}
+
+@media only screen and (max-width: 1366px) {
+	
+	.container__footer{
+		height:15%;
+		overflow:scroll;
+		margin-top:15px;
+		overflow-x:hidden;
+	}
+	
+.container__classes,img{
+	width:100px;
+	
+}
+	
+	
+ }	
+footer{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+
+button:hover{
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+button:nth-child(1):hover::after{ /*ORC*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "ORC Strength:10 Wisdom:5 Speed:6";
+    font-size:30px;
+    position: fixed;
+    
+    }
+
+button:nth-child(2):hover::after{/*Knight*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Knight Strength:5 Wisdom:10 Speed:15";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(3):hover::after{/*Witch*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Witch Strength:2 Wisdom:20 Speed:10";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(4):hover::after{/*King*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "King Strength:15 Wisdom:30 Speed:15";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(5):hover::after{/*Elf*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Elf Strength:15 Wisdom:15 Speed:25";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(6):hover::after{/*Human*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Human Strength:10 Wisdom:10 Speed:10";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(7):hover::after{/*Wolf*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Wolf Strength:25 Wisdom:1 Speed:50";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(8):hover::after{/*Viking*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Viking Strength:30 Wisdom:10 Speed:8";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(9):hover::after{/*Skull*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Skull Strength:5 Wisdom:10 Speed:10";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(10):hover::after{/*Centaur*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Centaur Strength:15 Wisdom:20 Speed:50";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(11):hover::after{/*Dragon*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Dragon Strength:50 Wisdom:1 Speed:50";
+    font-size:30px;
+    position: fixed;
+}
+
+button:nth-child(12):hover::after{/*Medusa*/
+    background-color:#4601FC;
+    border-radius:25px;
+    box-shadow:2px 2px 1px inset #e9e7ee;
+    content: 
+    "Medusa Strength:5 Wisdom:30 Speed:35";
+    font-size:30px;
+    position: fixed;
+}
+/*REFAZER CABEÇALHO (TITULO NO CANTO ESQUERDO SEGUIDOS DOS MENUS, CANTO DIREITO ICONE,*/
+
